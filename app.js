@@ -134,7 +134,7 @@ const EXPERIENCE = [
   {
     date: "2026 - Present",
     role: "Mixed Martial Arts (MMA) & Combat Coach",
-    company: "Ronin Corporation / Independent",
+    company: "Aluva Fight CLub",
     desc: "Directing high-performance training regimens across Mixed Martial Arts. Implementing tactical striking frameworks and physical conditioning models for athletes."
   }
 ];
