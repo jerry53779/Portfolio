@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="100%" height="100%" style="background-color: #111111; font-family: 'Poppins', 'Montserrat', monospace;">
+  
+  <defs>
+    <style>
+      .neo-border { stroke: #111111; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .terminal-header { fill: #2A2A2A; stroke: #111111; stroke-width: 2; }
+      .code-text { font-family: 'Courier New', monospace; font-weight: 700; font-size: 11px; fill: #A5A5A5; }
+      .highlight-text { fill: #FFCC00; font-weight: 900; }
+      .accent-text { fill: #00FF00; }
+      .string-text { fill: #FF79C6; }
+    </style>
+    
+    <pattern id="dot-matrix" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#222222" />
+    </pattern>
+  </defs>
+
+  <rect width="340" height="140" fill="#151515" />
+  <rect width="340" height="140" fill="url(#dot-matrix)" />
+
+  <g transform="translate(15, 15)">
+    <rect x="6" y="6" width="300" height="100" fill="#111111" rx="4" />
+    <rect x="0" y="0" width="300" height="100" fill="#1E1E1E" class="neo-border" rx="4" />
+    
+    <path d="M 0 4 A 4 4 0 0 1 4 0 L 296 0 A 4 4 0 0 1 300 4 L 300 22 L 0 22 Z" class="terminal-header" />
+    
+    <circle cx="12" cy="11" r="4" class="neo-border" fill="#FF5555" />
+    <circle cx="26" cy="11" r="4" class="neo-border" fill="#FFCC00" />
+    <circle cx="40" cy="11" r="4" class="neo-border" fill="#50FA7B" />
+    
+    <text x="70" y="15" font-size="10px" font-weight="800" fill="#666666" letter-spacing="0.5">main.c — Hello_World_Bootcamp</text>
+
+    <g transform="translate(15, 42)" class="code-text">
+      <text x="0" y="0"><tspan fill="#FF5555">#include</tspan> <tspan fill="#FF79C6">&lt;stdio.h&gt;</tspan></text>
+      
+      <text x="0" y="16"><tspan class="highlight-text">int</tspan> main() {</text>
+      
+      <g transform="translate(15, 32)">
+        <text x="0" y="0" class="accent-text" opacity="0.3" font-weight="900" filter="blur(1px)">printf("Hello, World! \\n");</text>
+        <text x="0" y="0"><tspan fill="#50FA7B">printf</tspan>(<tspan class="string-text">"Hello, World! \n"</tspan>);</text>
+      </g>
+      
+      <text x="15" y="48"><tspan class="highlight-text">return</tspan> <tspan fill="#BD93F9">0</tspan>;</text>
+      
+      <text x="0" y="64">}</text>
+    </g>
+
+    <rect x="180" y="72" width="6" height="12" fill="#50FA7B" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  
+</svg>

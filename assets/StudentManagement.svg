@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="100%" height="100%" style="background-color: #111111; font-family: 'Poppins', 'Montserrat', sans-serif;">
+  
+  <defs>
+    <style>
+      .neo-border { stroke: #111111; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .grid-line { stroke: #2A2A2A; stroke-width: 1; }
+      .white-box { fill: #FFFFFF; stroke: #111111; stroke-width: 1.5; }
+      .data-header { font-size: 8px; font-weight: 800; fill: #111111; text-transform: uppercase; letter-spacing: 0.5; }
+      .text-light { fill: #A5A5A5; font-size: 8px; font-weight: 500; }
+      .code-font { font-family: 'Courier New', monospace; }
+    </style>
+    
+    <pattern id="brutalist-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#222222" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="340" height="140" fill="#111111" />
+  <rect width="340" height="140" fill="url(#brutalist-grid)" />
+
+  <g transform="translate(15, 15)">
+    <rect x="5" y="5" width="165" height="110" fill="#000000" rx="4" />
+    <rect x="0" y="0" width="165" height="110" fill="#1A1A1A" class="neo-border" rx="4" />
+    
+    <path d="M 0 4 A 4 4 0 0 1 4 0 L 161 0 A 4 4 0 0 1 165 4 L 165 20 L 0 20 Z" fill="#222222" stroke="#111111" stroke-width="2" />
+    <circle cx="10" cy="10" r="3" fill="#FFCC00" />
+    <text x="20" y="13" font-size="7.5px" font-weight="900" fill="#777777" letter-spacing="0.5">DB_RECORDS | STATUS_ACTIVE</text>
+    
+    <g transform="translate(15, 35)">
+      <g transform="translate(0, 0)">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="#2A2A2A" stroke-width="4" />
+        <path d="M20,2 A18,18 0 0,1 38,20" fill="none" stroke="#FFCC00" stroke-width="5" stroke-linecap="round" />
+        <text x="11" y="24" font-size="12px" font-weight="900" fill="#FFFFFF">75%</text>
+        <text x="6" y="48" font-size="7px" font-weight="700" fill="#666666">RETENTION_RATE</text>
+      </g>
+      
+      <g transform="translate(60, 5)">
+        <rect x="0" y="0" width="75" height="6" rx="3" fill="#000000" />
+        <rect x="0" y="0" width="55" height="6" rx="3" fill="#FFCC00" />
+        <text x="0" y="16" class="text-light">AVG_GPA_VECTOR: 3.8</text>
+        
+        <g transform="translate(0, 26)">
+          <rect x="0" y="0" width="75" height="6" rx="3" fill="#000000" />
+          <rect x="0" y="0" width="25" height="6" rx="3" fill="#FFCC00" />
+          <text x="0" y="16" class="text-light">CLASS_ATTND: 95%</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(195, 15)">
+    <rect x="5" y="5" width="130" height="110" fill="#000000" rx="4" />
+    <rect x="0" y="0" width="130" height="110" fill="#1E1E1E" class="neo-border" rx="4" />
+    
+    <rect x="0" y="0" width="130" height="18" fill="#1A1A1A" stroke="#111111" stroke-width="2" />
+    <text x="8" y="12" font-size="8px" font-weight="900" fill="#A5A5A5" letter-spacing="0.3">STUDENT.MDB &gt; [schema]</text>
+    
+    <g transform="translate(10, 30)" class="text-light code-font">
+      <text x="0" y="0"><tspan fill="#FF79C6">TABLE</tspan> std_records {</text>
+      
+      <g transform="translate(12, 16)">
+        <text x="0" y="0"><tspan fill="#00FF00">id</tspan> <tspan class="data-header" fill="#FFCC00">PRIMARY_KEY</tspan></text>
+        <text x="0" y="14"><tspan fill="#00FF00">name</tspan> STRING</text>
+        <text x="0" y="28"><tspan fill="#00FF00">gpa</tspan> VECTOR</text>
+        <text x="0" y="42"><tspan fill="#00FF00">credentials</tspan> ARRAY</text>
+      </g>
+      
+      <text x="0" y="68">};</text>
+      
+      <g transform="translate(0, 80)">
+        <text x="0" y="0" fill="#FFCC00">&gt; flash_</text>
+        <rect x="42" y="-8" width="4" height="9" fill="#FFCC00">
+          <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+        </rect>
+      </g>
+    </g>
+  </g>
+  
+</svg>

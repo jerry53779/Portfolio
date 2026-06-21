@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="100%" height="100%" style="background-color: #141419; font-family: 'Poppins', 'Montserrat', monospace;">
+  
+  <!-- ========================================== -->
+  <!-- DEFINITIONS & STYLES                       -->
+  <!-- ========================================== -->
+  <defs>
+    <style>
+      .neo-border { stroke: #111111; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .grid-line { stroke: #22222b; stroke-width: 1; }
+      .accent-yellow { fill: #FFCC00; }
+      .text-light { fill: #E1E1E6; }
+      .text-dim { fill: #6E6E7A; font-size: 8.5px; font-weight: 500; }
+      .terminal-prompt { font-family: 'Courier New', monospace; font-weight: 700; font-size: 10px; }
+    </style>
+    
+    <!-- Brutalist Dot Texture -->
+    <pattern id="pim-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#22222b" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base with Texture -->
+  <rect width="340" height="140" fill="#141419" />
+  <rect width="340" height="140" fill="url(#pim-dots)" />
+
+  <!-- ========================================== -->
+  <!-- SUB-SYSTEM DASHBOARD GRID FRAME            -->
+  <!-- ========================================== -->
+  <g transform="translate(15, 15)">
+    <!-- Main Dashboard Frame Backing shadow -->
+    <rect x="5" y="5" width="305" height="105" fill="#111111" rx="4" />
+    <!-- Main UI Container Panel -->
+    <rect x="0" y="0" width="305" height="105" fill="#1A1A22" class="neo-border" rx="4" />
+
+    <!-- Panel Dividers (3-Column Framework Vector Matrix) -->
+    <line x1="90" y1="0" x2="90" y2="105" class="grid-line" />
+    <line x1="215" y1="0" x2="215" y2="105" class="grid-line" />
+
+    <!-- ========================================== -->
+    <!-- COLUMN 1: TRACKING CORE METRICS (LEFT)     -->
+    <!-- ========================================== -->
+    <g transform="translate(10, 12)">
+      <!-- Mini Header Tag -->
+      <rect x="0" y="0" width="45" height="12" rx="3" class="accent-yellow neo-border" stroke-width="1" />
+      <text x="6" y="9" font-size="7px" font-weight="900" fill="#111111">SYS_ENV</text>
+      
+      <!-- Metrics List Profiles -->
+      <g transform="translate(0, 24)" class="text-light" font-size="9px" font-weight="700">
+        <!-- Index Parameter Status -->
+        <circle cx="4" cy="5" r="3" fill="#00FF00" />
+        <text x="14" y="8" letter-spacing="0.3">INDEX: ACTV</text>
+        
+        <!-- Vectors Loaded Parameter Count -->
+        <g transform="translate(0, 16)">
+          <path d="M1 2 L7 2 L4 7 Z" fill="#FFCC00"/>
+          <text x="14" y="8" letter-spacing="0.3">VCTR: 1,024</text>
+        </g>
+
+        <!-- Tasks Dynamic Progress Check -->
+        <g transform="translate(0, 32)">
+          <rect x="0" y="2" width="70" height="6" rx="3" fill="#111111" />
+          <rect x="0" y="2" width="52" height="6" rx="3" fill="#FFCC00" />
+          <text x="0" y="-3" class="text-dim" font-size="7.5px">LOAD CAPACITY</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- COLUMN 2: CORE TERMINAL QUERY HUB (CENTER) -->
+    <!-- ========================================== -->
+    <g transform="translate(100, 12)">
+      <!-- Console Header Bar Mock Tab -->
+      <rect x="0" y="0" width="105" height="14" rx="3" fill="#111111" class="neo-border" stroke-width="1.5"/>
+      <circle cx="8" cy="7" r="2.5" fill="#FF5555" />
+      <circle cx="15" cy="7" r="2.5" fill="#FFCC00" />
+      <text x="26" y="10" font-size="7.5px" font-weight="900" fill="#6E6E7A" font-family="sans-serif">PIM_CORE_SHELL</text>
+
+      <!-- Terminal Prompts Feed Execution Logs (Easter Egg #24 Art Layer) -->
+      <g transform="translate(2, 30)" class="terminal-prompt">
+        <text x="0" y="0" fill="#6E6E7A">&gt; pim --query "logs"</text>
+        
+        <g transform="translate(0, 14)" font-size="8.5px" font-weight="800">
+          <text x="0" y="0" fill="#00FF00">[OK]</text>
+          <text x="26" y="0" class="text-light">Database synced.</text>
+        </g>
+        
+        <g transform="translate(0, 26)" font-size="8.5px" font-weight="800">
+          <text x="0" y="0" fill="#FFCC00">[WRN]</text>
+          <text x="26" y="0" class="text-light">7 tasks pending.</text>
+        </g>
+
+        <!-- Command Input Interactive Cursor Line Tracker -->
+        <g transform="translate(0, 38)">
+          <text x="0" y="0" fill="#FFCC00">&gt; flash_</text>
+          <rect x="42" y="-8" width="4" height="9" fill="#FFCC00">
+            <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+          </rect>
+        </g>
+      </g>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- COLUMN 3: AUTOMATION TRIGGERS (RIGHT)      -->
+    <!-- ========================================== -->
+    <g transform="translate(225, 12)">
+      <text x="0" y="8" class="text-dim" font-size="8px" font-weight="900" letter-spacing="0.5">QUICK_SCRIPTS</text>
+      
+      <!-- Interactive Grid Action Execution Toggles Modules -->
+      <g transform="translate(0, 18)">
+        <!-- Trigger Button Component Element 1 -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="70" height="18" rx="4" class="accent-yellow neo-border" stroke-width="1.5" />
+          <text x="14" y="11" font-size="8px" font-weight="900" fill="#111111">INDEX_DB</text>
+        </g>
+
+        <!-- Trigger Button Component Element 2 -->
+        <g transform="translate(0, 24)">
+          <rect x="0" y="0" width="70" height="18" rx="4" fill="#FFFFFF" class="neo-border" stroke-width="1.5" />
+          <text x="14" y="11" font-size="8px" font-weight="900" fill="#111111">FLUSH_CACHE</text>
+        </g>
+
+        <!-- Trigger Button Component Element 3 -->
+        <g transform="translate(0, 48)">
+          <rect x="0" y="0" width="70" height="18" rx="4" fill="#111111" class="neo-border" stroke-width="1.5" />
+          <text x="12" y="11" font-size="8px" font-weight="900" fill="#FFFFFF">RUN_CRON</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+</svg>

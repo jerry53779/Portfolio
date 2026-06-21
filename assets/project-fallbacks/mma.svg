@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 165" width="300" height="165">
+  <rect width="300" height="165" fill="#FFD100" stroke="#111111" stroke-width="4"/>
+  <!-- Isometric ring floor -->
+  <polygon points="150,30 250,75 150,120 50,75" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+  <polygon points="150,45 220,75 150,105 80,75" fill="none" stroke="#FFD100" stroke-width="2"/>
+  <!-- Corner posts -->
+  <line x1="50" y1="75" x2="50" y2="45" stroke="#111111" stroke-width="3"/>
+  <line x1="250" y1="75" x2="250" y2="45" stroke="#111111" stroke-width="3"/>
+  <line x1="150" y1="30" x2="150" y2="5" stroke="#111111" stroke-width="3"/>
+  <line x1="150" y1="120" x2="150" y2="90" stroke="#111111" stroke-width="3"/>
+  <!-- Text -->
+  <rect x="70" y="130" width="160" height="25" fill="#111111" rx="4"/>
+  <text x="150" y="147" fill="#FFD100" font-family="'Outfit', sans-serif" font-weight="bold" font-size="12" text-anchor="middle">KALARI TRAINING LAB</text>
+</svg>

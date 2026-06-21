@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerry | Coding & Kicks</title>
+  <meta name="description" content="Portfolio of Jerry, Creative Frontend Engineer & Martial Arts Systems Architect. Merging high-performance code with physical strike tracking.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo-wrapper">
+        <a href="#" class="logo" id="logo-jerry">JERRY</a>
+        <div class="env-bracket" id="env-bracket">
+          <span>[env]</span>
+          <span class="env-text" id="env-text">Loading env...</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#profile" class="nav-link">Profile</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="profile">
+    <div class="container hero-grid">
+      
+      <div class="hero-text">
+        <span class="hero-pretitle">SYSTEM LEVEL: ACTIVE // KYOKUSHIN STYLE</span>
+        <h1 class="hero-title" id="hero-headers">
+          <span>Creative Engineer</span>
+          <span>Coding & Kicks</span>
+        </h1>
+        <p class="hero-subtitle">
+          I build high-impact web architectures and physical computing pipelines. By day, I design premium, high-contrast user interfaces; by night, I program computer vision algorithms to track MMA sparring kinetics and analyze Fighting style templates.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-black" id="btn-repos-loop">View All Repos</a>
+          <img src="./assets/boxing-glove.svg" alt="Punch to Compile" class="punch-trigger" id="punch-trigger" title="Punch to Compile Code!">
+        </div>
+      </div>
+
+      <div class="portrait-outer">
+        <div class="portrait-shadow-box"></div>
+        <div class="portrait-frame" id="portrait-box">
+          <img src="./assets/profile-tech.jpg" alt="Jerry Tech Crop" class="portrait-img tech" id="profile-img-tech">
+          <img src="./assets/profile-athletic.jpg" alt="Jerry Athletic Crop" class="portrait-img athletic" id="profile-img-athletic">
+        </div>
+        
+        <div class="portrait-controls">
+          <span class="dot active" id="dot-tech" title="Tech View"></span>
+          <span class="dot" id="dot-athletic" title="Athletic View"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">CLASSIFIED PROJECTS</span>
+        <h2 class="section-title">ENGINEERING GRID</h2>
+      </div>
+
+      <div class="filter-panel" id="filter-panel">
+        <button class="filter-btn active" data-category="all">All Projects</button>
+        <button class="filter-btn" data-category="cs">Computer Science</button>
+        <button class="filter-btn" data-category="mma">MMA Engineering</button>
+        <button class="filter-btn" data-category="ai-ml">AI / ML</button>
+      </div>
+
+      <div id="filter-trap-anchor"></div>
+
+      <div class="projects-grid" id="projects-grid">
+        </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container timeline-section-wrapper">
+      
+      <div>
+        <div class="section-header">
+          <span class="section-tag">LOGGED ARCHIVE</span>
+          <h2 class="section-title">EXPERIENCE SEQUENCE</h2>
+        </div>
+
+        <div class="timeline-container" id="experience-timeline">
+          </div>
+      </div>
+
+      <div class="stamina-meter-wrapper">
+        <div class="stamina-header">STAMINA MONITOR</div>
+        <div class="stamina-bar-container">
+          <div class="stamina-bar-fill" id="stamina-bar"></div>
+          <span class="stamina-label" id="stamina-text">STAMINA: 100%</span>
+        </div>
+        <p class="stamina-hint">Stamina depletes as you scroll deep into training history.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      
+      <div class="footer-links-box">
+        <div class="section-header">
+          <span class="section-tag">SECURE SHAKEHAND</span>
+          <h2 class="section-title">LET'S BUILD</h2>
+        </div>
+        
+        <div class="oversized-links-grid">
+          <a href="mailto:jerrybernard2005@gmail.com" class="oversized-link" id="footer-contact-link">
+            <span>Contact</span>
+          </a>
+          
+          <a href="./resume-widget.html" class="oversized-link" id="footer-resume-link">
+            <span>Resume</span>
+          </a>
+          
+          <a href="https://instagram.com/jerryyyy.io" target="_blank" rel="noopener noreferrer" class="oversized-link" id="footer-social-link">
+            <span>Socials</span>
+            <div class="ko-badge" id="ko-badge">K.O!</div>
+          </a>
+        </div>
+
+        <p class="footer-reset-notice" id="reset-trigger">
+          ⚙️ <strong>TRIPLE-CLICK DASHBOARD RESET</strong><br>
+          Clicking background area 3 times clears variables, logs, and resets training matrix coordinates to default state.
+        </p>
+      </div>
+
+    </div> 
+  </footer>
+
+  <div class="midpoint-toast" id="midpoint-toast">
+    <div class="toast-header">
+      <span>⚠️ SYSTEM ANNOUNCEMENT</span>
+      <span class="toast-close" id="toast-close">✖</span>
+    </div>
+    <div class="toast-body" id="toast-text">
+      Mid-point reached. Keep pushing!
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

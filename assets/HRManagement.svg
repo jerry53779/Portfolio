@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="100%" height="100%" style="background-color: #F4F4F4; font-family: 'Poppins', 'Montserrat', sans-serif;">
+  
+  <!-- ========================================== -->
+  <!-- DEFINITIONS & STYLES                       -->
+  <!-- ========================================== -->
+  <defs>
+    <style>
+      .neo-border { stroke: #111111; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .grid-line { stroke: #E5E5E5; stroke-width: 1; }
+      .accent-yellow { fill: #FFCC00; }
+      .white-box { fill: #FFFFFF; }
+      .shadow-box { fill: #111111; }
+      .bar-label { font-size: 8px; font-weight: 800; fill: #111111; text-transform: uppercase; }
+      .metric-text { font-size: 16px; font-weight: 900; fill: #111111; }
+    </style>
+    
+    <!-- Minimalist Diagonal Stripe Texture for Brutalist Accent -->
+    <pattern id="stripes" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#E5E5E5" stroke-width="2" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base with Texture -->
+  <rect width="340" height="140" fill="#F4F4F4" />
+  <rect width="340" height="140" fill="url(#stripes)" />
+
+  <!-- ========================================== -->
+  <!-- HR DATA METRICS PANEL (LEFT)               -->
+  <!-- ========================================== -->
+  <g transform="translate(15, 15)">
+    <!-- Widget Block Shadow -->
+    <rect x="4" y="4" width="120" height="105" class="shadow-box" rx="4" />
+    <!-- Widget Block Container -->
+    <rect x="0" y="0" width="120" height="105" class="white-box neo-border" rx="4" />
+    
+    <!-- Header Lane -->
+    <rect x="0" y="0" width="120" height="20" class="accent-yellow neo-border" rx="4" />
+    <text x="8" y="13" font-size="8px" font-weight="900" fill="#111111" letter-spacing="0.5">TEAM LOGISTICS</text>
+    
+    <!-- HR Vector Silhouette Network Node -->
+    <g transform="translate(12, 32)">
+      <!-- Metric Data Core -->
+      <text x="0" y="18" class="metric-text">42_ACTIVE</text>
+      <text x="0" y="30" font-size="8px" font-weight="700" fill="#666666" letter-spacing="0.3">HEADCOUNT METRIC</text>
+      
+      <!-- Mini Visual Team Nodes Diagram -->
+      <g transform="translate(0, 42)" stroke="#111111" stroke-width="1.5">
+        <line x1="12" y1="12" x2="32" y2="12" />
+        <line x1="32" y1="12" x2="52" y2="2" />
+        <line x1="32" y1="12" x2="52" y2="22" />
+        <circle cx="12" cy="12" r="5" class="accent-yellow" />
+        <circle cx="32" cy="12" r="5" fill="#FFFFFF" />
+        <circle cx="52" cy="2" r="4" fill="#111111" />
+        <circle cx="52" cy="22" r="4" fill="#FFFFFF" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- WORKFORCE ANALYTICS BAR GRAPH (RIGHT)      -->
+  <!-- ========================================== -->
+  <g transform="translate(150, 15)">
+    <!-- Graph Board Shadow -->
+    <rect x="5" y="5" width="175" height="105" class="shadow-box" rx="4" />
+    <!-- Graph Board Container -->
+    <rect x="0" y="0" width="175" height="105" class="white-box neo-border" rx="4" />
+    
+    <!-- Graph Grid Lines -->
+    <line x1="25" y1="25" x2="160" y2="25" class="grid-line" />
+    <line x1="25" y1="50" x2="160" y2="50" class="grid-line" />
+    <line x1="25" y1="75" x2="160" y2="75" class="grid-line" />
+    
+    <!-- Graph Baseline Axle -->
+    <line x1="25" y1="90" x2="160" y2="90" stroke="#111111" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Bar Chart Modules (HR Resource Allocation Vectors) -->
+    <!-- Bar 1: Recruitment Data -->
+    <g transform="translate(35, 0)">
+      <rect x="0" y="45" width="22" height="45" class="accent-yellow neo-border" />
+      <text x="-2" y="102" class="bar-label">HIRE</text>
+    </g>
+    
+    <!-- Bar 2: Retention Analytics -->
+    <g transform="translate(75, 0)">
+      <rect x="0" y="20" width="22" height="70" class="shadow-box neo-border" />
+      <text x="-1" y="102" class="bar-label">RETAIN</text>
+    </g>
+    
+    <!-- Bar 3: Performance Matrix Tracking -->
+    <g transform="translate(115, 0)">
+      <rect x="0" y="35" width="22" height="55" fill="#FFFFFF" class="neo-border" />
+      <text x="-1" y="102" class="bar-label">PROD</text>
+    </g>
+  </g>
+  
+</svg>

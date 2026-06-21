@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- The main glove shape -->
+  <path d="M25,50 C25,35 40,20 60,20 C75,20 85,30 85,45 C85,60 75,70 60,70 L40,70 C30,70 25,60 25,50 Z" fill="#FFD100" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Thumb -->
+  <path d="M25,50 C20,50 15,55 15,62 C15,70 25,75 35,75 C45,75 45,68 45,65" fill="#FFD100" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Wrist band -->
+  <rect x="35" y="68" width="30" height="12" rx="2" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
+  <!-- Laces or stripes -->
+  <path d="M45,70 L45,80 M55,70 L55,80" stroke="#111111" stroke-width="2"/>
+  <!-- Shadow crease line -->
+  <path d="M50,22 C62,22 72,28 75,38" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerry's Retro Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Using retro pixel and monospaced typography to match image_40b007.jpg -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resume-widget.css">
+</head>
+<body>
+
+  <!-- MAIN WINDOW (Matches outer layout of image_40b007.jpg) -->
+  <div class="retro-window main-window">
+    <div class="window-bar">
+      <div class="window-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="window-title">MY RESUME</div>
+    </div>
+
+    <div class="window-content grid-layout">
+      
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+        <!-- Social Links -->
+        <div class="social-links">
+          <div class="link-item">
+            <span class="retro-icon handle-icon">📸</span>
+            <span class="link-text">- jerryyyy.io</span>
+          </div>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="section-container">
+          <h2 class="retro-heading">LANGUAGES</h2>
+          <div class="lang-row">
+            <span class="lang-name">Malayalam</span>
+            <span class="pixel-bar">■■■■■</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">English</span>
+            <span class="pixel-bar">■■■■■</span>
+          </div>
+        </div>
+
+        <!-- Likings Section -->
+        <div class="section-container">
+          <h2 class="retro-heading">Likings</h2>
+          <ul class="likings-list">
+            <li>- Martial Arts 🥊</li>
+            <li>- Coding 💻</li>
+            <li>- UI Design 🎨</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN (Floating Card Stack) -->
+      <div class="right-col">
+        <!-- About Me Window Card Overlay -->
+        <div class="retro-window about-card">
+          <div class="window-bar blue-bar">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-title">WWW.ABOUT.ME</div>
+          </div>
+          <div class="window-content card-inner">
+            <div class="profile-header">
+              <div class="profile-text">
+                <h1 class="user-name">JERRY BERNARD</h1>
+                <p class="contact-line">📞 +91 XXXXX XXXXX</p>
+                <p class="contact-line">✉️ jerry@jerryyyy.io</p>
+                <p class="contact-line">📍 Kochi, Kerala, India</p>
+              </div>
+              <!-- Avatar Placeholder Graphic -->
+              <div class="avatar-container">
+                <svg viewBox="0 0 100 100" class="pixel-avatar">
+                  <circle cx="50" cy="35" r="20" fill="none" stroke="white" stroke-width="4"/>
+                  <path d="M20 80 C20 60, 80 60, 80 80" fill="none" stroke="white" stroke-width="4"/>
+                </svg>
+              </div>
+            </div>
+            <p class="about-desc">
+              Versatile B.Tech Computer Science student and martial arts coach merging automated technical architectures with high-performance combat principles. Expert in developing functional interfaces, optimizing local data systems, and managing technical community ecosystems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill Nodes Floating Tree Structure -->
+        <div class="node-tree">
+          <div class="node-pill">FULL STACK</div>
+          <div class="node-line"></div>
+          <div class="node-pill">AUTOMATION</div>
+          <div class="node-line"></div>
+          <div class="node-pill">MMA COACHING</div>
+          <div class="node-line"></div>
+          <div class="node-pill">LEADERSHIP</div>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW / FULL-WIDTH SECTIONS -->
+      <div class="bottom-row">
+        
+        <!-- Education Timeline -->
+        <div class="section-container education-section">
+          <h2 class="retro-heading">EDUCATION</h2>
+          <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+            <div class="timeline-node position-1">
+              <span class="node-year">2021</span>
+              <span class="node-dot"></span>
+              <span class="node-label">CLASS X</span>
+            </div>
+            <div class="timeline-node position-2">
+              <span class="node-year">2023</span>
+              <span class="node-dot"></span>
+              <span class="node-label">CLASS XII</span>
+            </div>
+            <div class="timeline-node position-3">
+              <span class="node-year">2027</span>
+              <span class="node-dot highlight-dot"></span>
+              <span class="node-label">B.TECH (AISAT)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Stack Skills Grid -->
+        <div class="section-container skills-section">
+          <h2 class="retro-heading">SKILLS</h2>
+          <div class="skills-pixel-grid">
+            <div class="skill-box py">PY</div>
+            <div class="skill-box js">JS</div>
+            <div class="skill-box c-lang">C</div>
+            <div class="skill-box sql">SQL</div>
+            <div class="skill-box sb">SUPA</div>
+            <div class="skill-box cv">CV</div>
+          </div>
+        </div>
+
+        <!-- Worked As & Portfolio Footer Area -->
+        <div class="footer-grid">
+          <div class="worked-as-box">
+            <h2 class="retro-heading">WORKED AS</h2>
+            <ul class="work-list">
+              <li>MMA & COMBAT COACH - 2026 - PRESENT</li>
+              <li>NRPF COORDINATOR (NSS) - 1 YEAR</li>
+              <li>IEEE SB SECRETARY - 1 YEAR</li>
+              <li>TINKERHUB TECH LEAD - 1 YEAR</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-qr-box">
+            <span class="portfolio-tag">PORTFOLIO HERE</span>
+            <!-- Decorative simulated QR code matrix pattern container -->
+            <div class="retro-qr">
+              <div class="qr-square top-left"></div>
+              <div class="qr-square top-right"></div>
+              <div class="qr-square bottom-left"></div>
+              <div class="qr-fill"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

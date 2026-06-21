@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" width="120" height="70">
+  <!-- Left Fighter (White shirt, kicking) -->
+  <circle cx="35" cy="22" r="5" fill="#111111" stroke="#111111" stroke-width="1"/>
+  <path d="M 35,27 L 35,42 M 35,32 L 20,30 M 35,32 L 48,28 M 35,42 L 25,55 M 35,42 L 50,42 L 62,35" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Right Fighter (Red gloves/shorts, blocking/defending) -->
+  <circle cx="85" cy="24" r="5" fill="#111111" stroke="#111111" stroke-width="1"/>
+  <path d="M 85,29 L 80,44 M 85,34 L 70,30 M 85,34 L 92,42 M 80,44 L 70,55 M 80,44 L 85,55" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Accent fight glow -->
+  <path d="M 58,26 L 68,36 M 68,26 L 58,36" stroke="#FFD100" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 165" width="300" height="165">
+  <rect width="300" height="165" fill="#111111" stroke="#FFD100" stroke-width="4"/>
+  <!-- Node circles representing neural net -->
+  <circle cx="60" cy="50" r="10" fill="#FFD100" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="60" cy="115" r="10" fill="#FFD100" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="150" cy="82" r="12" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+  <circle cx="240" cy="50" r="10" fill="#FFD100" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="240" cy="115" r="10" fill="#FFD100" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Links -->
+  <line x1="70" y1="50" x2="138" y2="82" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="70" y1="115" x2="138" y2="82" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="162" y1="82" x2="230" y2="50" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="162" y1="82" x2="230" y2="115" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="150" y="87" fill="#111111" font-family="'Outfit', sans-serif" font-weight="black" font-size="14" text-anchor="middle">AI</text>
+  <text x="150" y="145" fill="#FFD100" font-family="monospace" font-size="11" text-anchor="middle">STRIKE KINEMATICS DATA MODEL</text>
+</svg>
