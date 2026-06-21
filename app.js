@@ -102,16 +102,10 @@ const PROJECTS = [
 
 const EXPERIENCE = [
     {
-    date: "2023 - 2024",
+    date: "2024 - 2025",
     role: "TinkerHub Co-Lead",
     company: "AISAT TinkerHub Cell",
     desc: "Promoted a culture of innovation and collaboration among students. Organized workshops, hackathons, and learning sessions focused on cutting-edge technologies and creative problem-solving."
-  },
-  {
-    date: "2024 - 2025",
-    role: "Secretary",
-    company: "IEEE Student Branch AISAT",
-    desc: "Managed structural community operations, organized technical workflows, and coordinated events across the student branch network, fostering a strong engineering community."
   },
   {
     date: "2025 - 2026",
@@ -124,6 +118,12 @@ const EXPERIENCE = [
     role: "Tech Lead",
     company: "Builder Clan",
     desc: "Directed the technical vision and software development operations. Supervised development cycles for internal institute projects, establishing robust codebase standards and mentoring junior developers."
+  },
+    {
+    date: "2025 - 2027",
+    role: "Secretary",
+    company: "IEEE Student Branch AISAT",
+    desc: "Managed structural community operations, organized technical workflows, and coordinated events across the student branch network, fostering a strong engineering community."
   },
   {
     date: "2026 - 2027",
